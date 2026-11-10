@@ -1,0 +1,15 @@
+services:
+  idea-coach:
+    build: .
+    image: idea-coach:latest
+    container_name: idea-coach
+    # Bound to localhost only: the app is reachable from this computer, not the network.
+    ports:
+      - "127.0.0.1:8501:8501"
+    env_file: .env
+    volumes:
+      - ./data:/app/data                       # database and backups stay on your computer
+      - ./constraints.md:/app/constraints.md   # edits from the Constraints page persist
+      - ./CHANGELOG.md:/app/CHANGELOG.md       # kept up to date by the app
+      - ./ROADMAP.md:/app/ROADMAP.md           # kept up to date by the app
+    restart: unless-stopped
