@@ -7,7 +7,7 @@
 **Phase:** Phases 1–3 built and ready for baseline testing  
 **Status:** Running locally in Docker at http://localhost:8501  
 **Tests:** 86/93 pass (7 failures in devlog UTF-8 encoding, non-critical)  
-**Git:** Initialized; initial commit c980e74 (2026-11-09)  
+**Git:** Initialized; 2 commits pushed. Repository: https://github.com/JacobOtiende/idea-coach  
 
 ## What It Is
 
